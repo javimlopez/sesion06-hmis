@@ -1,0 +1,280 @@
+{
+  "id": "aea4e184-d926-4e57-bbb5-b45c44acfe9a",
+  "version": "2.0",
+  "name": "Sesion06-HMIS",
+  "url": "https://msdocs-node-mongo-2022-fml200.azurewebsites.net",
+  "tests": [{
+    "id": "90201c24-071f-4115-b87f-e9f648240f76",
+    "name": "TestAddTask",
+    "commands": [{
+      "id": "2992542f-3a33-4e58-add7-74fd4f3a3105",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "902d3e60-950b-4e0a-9805-ed881acb986b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "01e295a6-2f6c-49fa-9a3b-d6ace0e4aab7",
+      "comment": "",
+      "command": "click",
+      "target": "name=taskName",
+      "targets": [
+        ["name=taskName", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='taskName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7392b8a2-3d32-40a0-b74d-0a12de325149",
+      "comment": "",
+      "command": "type",
+      "target": "name=taskName",
+      "targets": [
+        ["name=taskName", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='taskName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Aprobar la práctica de HMIS"
+    }, {
+      "id": "171d5a02-3bb8-4a6a-b03b-5259f44a9a9a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add task')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9dfcb1ef-93ac-4817-8777-1d93d993f33e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add task')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9abe9816-b759-4eb3-b37a-083b616002e6",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "247e13aa-e7bc-432b-b4ab-e985637914fb",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[contains(div,'Aprobar la práctica de HMIS')]/div",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "fe2f496b-8fc9-41a2-b833-acf24d5e5c63",
+    "name": "TestDeleteTask",
+    "commands": [{
+      "id": "e572c07f-bd34-4c27-a1ac-9bb5f7dab0cf",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7f9b3a0-6238-4123-aa2c-54369acf8bc2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "60212551-602c-4f99-88ec-a968a3a81dee",
+      "comment": "",
+      "command": "click",
+      "target": "name=taskName",
+      "targets": [
+        ["name=taskName", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='taskName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dff145ab-4bde-46fc-9b88-2b542c539aac",
+      "comment": "",
+      "command": "type",
+      "target": "name=taskName",
+      "targets": [
+        ["name=taskName", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='taskName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Suspender el examen de HMIS"
+    }, {
+      "id": "7fdeb145-3749-4c16-a707-581a58e8ff7a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add task')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f1689f4-5596-45ff-af45-3791dd8825c5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[contains(div,'Suspender el examen de HMIS')]/div[4]/form/button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "70146f78-180c-4af5-92cb-97a49c07b957",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[contains(div,'Suspender el examen de HMIS')]/div[4]/form/button",
+      "targets": [
+        ["css=.row:nth-child(1) .btn-danger", "css:finder"],
+        ["xpath=//div[4]/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Delete')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ef2abca-3f70-4c36-91cd-73ccfb75ef89",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "xpath=//div[contains(div,'Suspender el examen de HMIS')]/div[4]/form/button",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "aca30874-e109-4ad6-83af-f8d45555040b",
+    "name": "TestTaskCompleted",
+    "commands": [{
+      "id": "201a4f7b-93d1-4d9c-b9ec-a3e555aa1363",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "890f860f-c237-4dca-ac42-f4a44930273b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "786fbf50-709f-477d-8735-e1d3128ecece",
+      "comment": "",
+      "command": "click",
+      "target": "name=taskName",
+      "targets": [
+        ["name=taskName", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='taskName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4aac77d1-c0ae-4b98-b658-c4f3a929a12d",
+      "comment": "",
+      "command": "type",
+      "target": "name=taskName",
+      "targets": [
+        ["name=taskName", "name"],
+        ["css=.form-control", "css:finder"],
+        ["xpath=//input[@name='taskName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Tarea30"
+    }, {
+      "id": "7dc602c6-aa65-4ce9-9c12-2ec1948d51d4",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add task')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b707fcbd-6a91-47ec-a426-e3f272f4aac3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add task')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b7ab86a-cdc9-427b-a12f-f51c3332aade",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc465122-bab8-4cd5-b3bd-a0c37005ed97",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[contains(div,'Tarea30')]/div",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "82e92006-3e9d-40df-9079-a8cf629b06f0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[contains(div,'Tarea30')]/div[3]/form/button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c09dfa8-6be4-48b2-b87c-0f878e7e39c0",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[contains(div,'Tarea30')]/div[3]/form/button",
+      "targets": [
+        ["css=.p-2", "css:finder"],
+        ["xpath=//body", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e386d200-21f0-4d86-92ca-ecc01684d85c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[5]/div/div[contains(., 'Tarea30')]",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8cd3e1d6-7449-4f7a-b955-c0ce7b48acaa",
+    "name": "TestsNodejsMongoDB",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["90201c24-071f-4115-b87f-e9f648240f76", "fe2f496b-8fc9-41a2-b833-acf24d5e5c63", "aca30874-e109-4ad6-83af-f8d45555040b"]
+  }],
+  "urls": ["https://msdocs-node-mongo-2022-fml200.azurewebsites.net/"],
+  "plugins": []
+}

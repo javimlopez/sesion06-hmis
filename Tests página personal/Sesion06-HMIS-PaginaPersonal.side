@@ -1,0 +1,627 @@
+{
+  "id": "aa090813-9b9e-4376-8079-ab677b6be9d7",
+  "version": "2.0",
+  "name": "sesion06-hmis-personal",
+  "url": "https://hmis-fml200.azurewebsites.net/index.html",
+  "tests": [{
+    "id": "8b3f343a-8826-49a1-80f4-85bf2d29ad5a",
+    "name": "TestPaginaPrincipal",
+    "commands": [{
+      "id": "9ec6cf42-46d2-404d-b918-4fe7896be356",
+      "comment": "",
+      "command": "open",
+      "target": "https://hmis-fml200.azurewebsites.net/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "996aea75-649f-414a-aedc-9c78cafcf013",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6e961b4-07fb-41d1-9a42-7a986a8a9820",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Repositorio de este proyecto",
+      "targets": [
+        ["linkText=Repositorio de este proyecto", "linkText"],
+        ["css=.mb-3:nth-child(1) .text-dark", "css:finder"],
+        ["xpath=//a[contains(text(),'Repositorio de este proyecto')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://github.com/tgp034/paginaeqipotmj')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Repositorio de este proyecto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "45194614-aeea-400d-9f29-4cc8a3142377",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "tgp034/paginaeqipotmj: Repo para la sesion 04",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "142fafc3-8394-498a-9339-e953bf18816c",
+      "comment": "",
+      "command": "open",
+      "target": "https://hmis-fml200.azurewebsites.net/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4939fe94-7940-4564-b3b1-62005f47582f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=HMIS organization on GitHub",
+      "targets": [
+        ["linkText=HMIS organization on GitHub", "linkText"],
+        ["css=.mb-3:nth-child(2) .text-dark", "css:finder"],
+        ["xpath=//a[contains(text(),'HMIS organization on GitHub')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://github.com/ualhmis/')]", "xpath:href"],
+        ["xpath=//div[2]/div/h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'HMIS organization on GitHub')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb9e5210-baef-4ae8-a710-7a760094c544",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Herramientas y Métodos de Ingeniería del Software - Universidad de Almería",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6cc2ac30-518e-4545-8c78-4f1eeab52017",
+      "comment": "",
+      "command": "open",
+      "target": "https://hmis-fml200.azurewebsites.net/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85767b0d-3bac-42c6-af25-fe1d345e5b5a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Azure portal",
+      "targets": [
+        ["linkText=Azure portal", "linkText"],
+        ["css=.mb-3:nth-child(3) .text-dark", "css:finder"],
+        ["xpath=//a[contains(text(),'Azure portal')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://azure.microsoft.com/es-es/features/azure-portal/')]", "xpath:href"],
+        ["xpath=//div[3]/div/h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Azure portal')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "12085a3e-5e6b-4021-b08a-41c7bd44b76e",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Microsoft Azure Portal | Microsoft Azure",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05d0751b-393f-4e34-a6df-f10c861f4343",
+      "comment": "",
+      "command": "open",
+      "target": "https://hmis-fml200.azurewebsites.net/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2b77af4d-d614-4dd2-9c5e-3ffb54222735",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Página Tito",
+      "targets": [
+        ["linkText=Página Tito", "linkText"],
+        ["css=.nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Página Tito')]", "xpath:link"],
+        ["xpath=//div[@id='navbarColor02']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './paginaTito.html')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Página Tito')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "888c5453-919f-47fc-a030-e4f213f4411d",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Página personal de Tito",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c26570d6-bac9-4dee-95ee-c599c13cad7c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Página principal",
+      "targets": [
+        ["linkText=Página principal", "linkText"],
+        ["css=.nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Página principal')]", "xpath:link"],
+        ["xpath=//div[@id='navbarColor02']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './index.html')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Página principal')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "185a6d61-894f-4fda-ad95-8691e8ab4297",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Nuestra página web grupal",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4ca4f06-e47e-49c8-891f-c8a50874d5b2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Página Javi",
+      "targets": [
+        ["linkText=Página Javi", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Página Javi')]", "xpath:link"],
+        ["xpath=//div[@id='navbarColor02']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './paginaJavi.html')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Página Javi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d4e26ae-b27e-4bb0-ae01-f1c70a5e4e7c",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Página personal de Javi",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4169afe5-97e6-4842-95fa-df2a86d85a54",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Página Principal",
+      "targets": [
+        ["linkText=Página Principal", "linkText"],
+        ["css=.nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Página Principal')]", "xpath:link"],
+        ["xpath=//div[@id='navbarColor02']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './index.html')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Página Principal')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "989019aa-f26a-472e-ac1c-387fe08a81e9",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Nuestra página web grupal",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "cc176e6f-6099-4aa5-94e0-2fe808afd54e",
+    "name": "TestPaginaTito",
+    "commands": [{
+      "id": "6c804269-3090-4d1c-8b12-03f04413f895",
+      "comment": "",
+      "command": "open",
+      "target": "https://hmis-fml200.azurewebsites.net/paginaTito.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06d57bd0-ed0c-487c-aba7-2bae3fde42a2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5457d3eb-8a79-47dd-991c-8bb22c3f558f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Página principal",
+      "targets": [
+        ["linkText=Página principal", "linkText"],
+        ["css=.nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Página principal')]", "xpath:link"],
+        ["xpath=//div[@id='navbarColor02']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './index.html')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Página principal')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5481369-c9ea-4919-b0c4-0c6c04ce4ef5",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Nuestra página web grupal",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06dfe655-4ca8-4257-aa63-7ba5b751ce54",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Página Tito",
+      "targets": [
+        ["linkText=Página Tito", "linkText"],
+        ["css=.nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Página Tito')]", "xpath:link"],
+        ["xpath=//div[@id='navbarColor02']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './paginaTito.html')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Página Tito')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "df78aaf5-3b19-4fa9-a95b-6c740f639d6e",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Página personal de Tito",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1095e341-585d-4875-8837-336ca946ce3b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Página Javi",
+      "targets": [
+        ["linkText=Página Javi", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Página Javi')]", "xpath:link"],
+        ["xpath=//div[@id='navbarColor02']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './paginaJavi.html')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Página Javi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec417f04-d82b-45fd-ab02-28889c201011",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Página personal de Javi",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a3b424c-52cf-4c4d-889b-dc68130af704",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Página Tito",
+      "targets": [
+        ["linkText=Página Tito", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Página Tito')]", "xpath:link"],
+        ["xpath=//div[@id='navbarColor02']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './paginaTito.html')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Página Tito')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d7ed741-7da3-44dd-baff-fbe1ed208a8a",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Página personal de Tito",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "75eb65d2-9478-4fc3-8f45-c91d2becaed7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Tetris",
+      "targets": [
+        ["linkText=Tetris", "linkText"],
+        ["css=.mb-3:nth-child(1) .text-dark", "css:finder"],
+        ["xpath=//a[contains(text(),'Tetris')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://tetris.com/play-tetris')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/div/div/h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Tetris')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5a98740-45d2-4a14-b88c-743ec24914aa",
+      "comment": "",
+      "command": "open",
+      "target": "https://hmis-fml200.azurewebsites.net/paginaTito.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8339b98f-b31c-4f26-a5bb-4bec93be3ea3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Un Tío Blanco Hetero",
+      "targets": [
+        ["linkText=Un Tío Blanco Hetero", "linkText"],
+        ["css=.mb-3:nth-child(2) .text-dark", "css:finder"],
+        ["xpath=//a[contains(text(),'Un Tío Blanco Hetero')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.youtube.com/channel/UCW3iqZr2cQFYKdO9Kpa97Yw')]", "xpath:href"],
+        ["xpath=//div[2]/div/h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Un Tío Blanco Hetero')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "245e875a-3a44-4968-98c1-a0cc8ba1b53e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#meta > #channel-name > #container #text",
+      "targets": [
+        ["css=#meta > #channel-name > #container #text", "css:finder"],
+        ["xpath=(//yt-formatted-string[@id='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='text-container']/yt-formatted-string", "xpath:idRelative"],
+        ["xpath=//ytd-channel-name/div/div/yt-formatted-string", "xpath:position"],
+        ["xpath=//yt-formatted-string[contains(.,'Un Tio Blanco Hetero')]", "xpath:innerText"]
+      ],
+      "value": "Un Tio Blanco Hetero"
+    }, {
+      "id": "cee07d6b-7241-4115-91a4-2a1451f1c542",
+      "comment": "",
+      "command": "open",
+      "target": "https://hmis-fml200.azurewebsites.net/paginaTito.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba2bb6fb-7c1d-4e7e-bee8-14dfecfb2a3e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Canal sobre baile",
+      "targets": [
+        ["linkText=Canal sobre baile", "linkText"],
+        ["css=.mb-3:nth-child(3) .text-dark", "css:finder"],
+        ["xpath=//a[contains(text(),'Canal sobre baile')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.youtube.com/user/thatsteezy')]", "xpath:href"],
+        ["xpath=//div[3]/div/h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Canal sobre baile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5de8d4e-78c4-4830-8c71-6c8ad2695fe7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#meta > #channel-name > #container #text",
+      "targets": [
+        ["css=#meta > #channel-name > #container #text", "css:finder"],
+        ["xpath=(//yt-formatted-string[@id='text'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='text-container']/yt-formatted-string", "xpath:idRelative"],
+        ["xpath=//ytd-channel-name/div/div/yt-formatted-string", "xpath:position"],
+        ["xpath=//yt-formatted-string[contains(.,'STEEZY')]", "xpath:innerText"]
+      ],
+      "value": "STEEZY"
+    }, {
+      "id": "1d71439f-9431-4d07-b953-caef0bb47de4",
+      "comment": "",
+      "command": "open",
+      "target": "https://hmis-fml200.azurewebsites.net/paginaTito.html",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "b2d16616-4219-4d01-839d-b28a5cb558b8",
+    "name": "TestPaginaJavi",
+    "commands": [{
+      "id": "226822cf-17fd-40a3-87b0-268fcb8bef9c",
+      "comment": "",
+      "command": "open",
+      "target": "https://hmis-fml200.azurewebsites.net/paginaJavi.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87e7c390-3e40-4dce-8b2c-db74399fbd99",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a173e6d9-bd83-4ced-8a8e-f45dbddf3fe6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Página Principal",
+      "targets": [
+        ["linkText=Página Principal", "linkText"],
+        ["css=.nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Página Principal')]", "xpath:link"],
+        ["xpath=//div[@id='navbarColor02']/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './index.html')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Página Principal')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44dc979f-afc3-4e8c-b976-60deeefd897f",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Nuestra página web grupal",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1475bd6-52a0-4678-bff3-3146ad6e6625",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Página Javi",
+      "targets": [
+        ["linkText=Página Javi", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Página Javi')]", "xpath:link"],
+        ["xpath=//div[@id='navbarColor02']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './paginaJavi.html')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Página Javi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dec683fb-6f93-4d54-8edc-b89d21e94bc4",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Página personal de Javi",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9375ba0a-1188-4cb8-afc6-b2ca2d260ccd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Página Tito",
+      "targets": [
+        ["linkText=Página Tito", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Página Tito')]", "xpath:link"],
+        ["xpath=//div[@id='navbarColor02']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './paginaTito.html')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Página Tito')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d96a69c4-296f-4f41-8b4a-6dcedfde4730",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Página personal de Tito",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c7cd44a-6d4a-491c-be4a-becc344c01de",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Página Javi",
+      "targets": [
+        ["linkText=Página Javi", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Página Javi')]", "xpath:link"],
+        ["xpath=//div[@id='navbarColor02']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './paginaJavi.html')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Página Javi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "74ec6613-61d8-40f0-945e-7e70b046fc99",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Página personal de Javi",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5b0de0a5-899b-4603-8d29-af7fa438c485",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gojira",
+      "targets": [
+        ["linkText=Gojira", "linkText"],
+        ["css=.mb-3:nth-child(1) .text-dark", "css:finder"],
+        ["xpath=//a[contains(text(),'Gojira')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://open.spotify.com/artist/0GDGKpJFhVpcjIGF8N6Ewt')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gojira')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1505f6bf-ca41-4e19-9bf1-eda565e80cb6",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df934e50-cdc0-4ff1-a6a0-716bf3613d65",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Spotify – Gojira",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78c58c4d-a0d1-48f8-b432-dfa34e2816e8",
+      "comment": "",
+      "command": "open",
+      "target": "https://hmis-fml200.azurewebsites.net/paginaJavi.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50349d5b-1e1e-464f-a9f6-9273ce5f7525",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Flying Whales",
+      "targets": [
+        ["linkText=Flying Whales", "linkText"],
+        ["css=.mb-3:nth-child(1) .card-text > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Flying Whales')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://open.spotify.com/track/5OjCsHeByDYEGxMrb1z8KQ?si=bb7a1e5853b54d73')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Flying Whales')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0baac4f2-53b4-4523-a310-d47638bbab0a",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d41e48d-6ed9-45b3-9870-3c680c3a355b",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Spotify – Flying Whales - song by Gojira",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "72063b6d-f6bd-49bc-b1ee-49610ad525a0",
+      "comment": "",
+      "command": "open",
+      "target": "https://hmis-fml200.azurewebsites.net/paginaJavi.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "017520a4-9546-4ebe-8d76-bbf5c8513a5b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Extremoduro",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb58660a-1ba1-43c3-906b-e3402c01d67d",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50d3aea5-bf92-4a0b-a4a2-e95bfc4b8ade",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Spotify – Extremoduro",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "315c55d3-a295-428a-8be2-da1ca25d831f",
+      "comment": "",
+      "command": "open",
+      "target": "https://hmis-fml200.azurewebsites.net/paginaJavi.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1722fe3-991b-4357-bab9-8805173d9af1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Bribriblibli",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f496ba2-0ba7-4db3-ba28-ac3c79ba0db5",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62d89ffd-cf36-4c9a-93d1-b9d9e0276e98",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Spotify – Bribriblibli - Versión 2004 - song by Extremoduro",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "818f6aac-98b4-4c1a-86be-8735face4d7a",
+    "name": "TestsPaginaPersonalSesion06",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b2d16616-4219-4d01-839d-b28a5cb558b8", "8b3f343a-8826-49a1-80f4-85bf2d29ad5a", "cc176e6f-6099-4aa5-94e0-2fe808afd54e"]
+  }],
+  "urls": ["https://hmis-fml200.azurewebsites.net/index.html"],
+  "plugins": []
+}
